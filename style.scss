@@ -26,14 +26,13 @@
     a {
       text-decoration: none;
       margin: 30px;
-      padding: 5px;
+      padding: 10px;
       color: #505050;
       font-size: 16px;
       font-weight: 700;
 
       &:hover {
-        border-bottom-color: #2d2a2a;
-        border-bottom: 3px solid;
+        background: lightgrey;
       }
     }
 
@@ -113,8 +112,14 @@
       width: 130px;
       height: 45px;
       border-radius: 10px;
-      font-weight: bold;
-      font-size: 16px;
+      
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: #1a1a1a;
+      }
     }
 
     button:active {
