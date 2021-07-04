@@ -1,9 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: calibri;
   }
   
-  
+  body {
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+  }
+
   .nav-menu {
     background-color: #f6f5f5;
     display: flex;
@@ -15,7 +21,7 @@
     padding: 0px 5%;
     
     h1 {
-      font-size: 24px;
+      font-size: 30px;
     }
 
     ul {
@@ -28,8 +34,8 @@
       margin: 30px;
       padding: 10px;
       color: #505050;
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: bold;
 
       &:hover {
         background: lightgrey;
@@ -37,20 +43,11 @@
     }
 
     .active {
-      border-bottom-color: #2d2a2a;
+      border-bottom-color: #1a1a1a;
       border-bottom: 3px solid;
-      font-family: bold;
       color: #2d2a2a;
     }
 
-  }
-
-  body {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/background_img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .container {
@@ -107,13 +104,18 @@
       width: 130px;
       height: 45px;
       border-radius: 10px;
-      
 
+      &:hover {
+        background-color: darkgrey;
+      }
+      
       a {
         text-decoration: none;
         font-weight: bold;
+        padding: 10px 15px;
         font-size: 16px;
         color: #1a1a1a;
+
       }
     }
 
@@ -146,7 +148,7 @@
       letter-spacing: 1px;
     }
   }
-
+ 
   .pro-container {
       width: 100%;
       height: 100vh;
@@ -155,11 +157,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      // padding-top: 40px;
 
     .pro-heading-container {
       text-align: center;
-      margin: 20px 0px;
   
       h1 {
         color: #1a1a1a;
@@ -170,7 +170,7 @@
   
       p {
         color: #6d6d6d;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0;
         padding: 0;
       }
@@ -183,47 +183,116 @@
 
       .pro-box {
         width: 350px;
-        height: 350px;
+        height: 450px;
         margin: 50px;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 2px 2px 10px;
+        position: relative;
+
+        &:hover {
+          transform: translateY(-10px);
+          transition: all ease 0.3s;
+        }
 
         .pro-box-img {
           width: 100%;
-          height: 70%;
+          height: 80%;
 
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
+          
+          .pro-type {
+            background-color: #151515;
+            color: #ffffff;
+            padding: 10px 15px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 2px 2px 10px;
+          }
         }
 
         .pro-box-text {
+          background-color: lightgrey;
           width: 100%;
-          height: 30%;
+          height: 20%;
           display: flex;
           justify-content: center;
           align-items: center;
 
-          // a {
-          //   margin: 0;
-          //   color: #6d6d6d;
-          //   font-size: 1.1rem;
-          //   font-family: caibri;
-          //   display: block;
-          //   display: -webkit-box;
-          //   max-width: 80%;
-          //   -webkit-line-clamp: 4;
-          //   overflow: hidden;
-          //   text-overflow: ellipsis;
-          //   -webkit-box-orient: vertical;
-          // }
+          a {
+            padding: 10px;
+            color: #6d6d6d;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover {
+              color: #1a1a1a;
+              font-size: 1.3rem;
+            }
+          }
         }
       }
     }
 
+  }
+
+  .gal-container {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 2% 20px 2%;
+
+    .gal-heading {
+      text-align: center;
+      padding-bottom: 20px;
+  
+      h1 {
+        color: #1a1a1a;
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+      }
+  
+      p {
+        color: #6d6d6d;
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    
+    .gal-box-container {
+      width: 90%;
+      height: 70vh;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+
+      .gal-box {
+        height: auto;
+        box-shadow: 2px 2px 10px;
+        // overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
   }
 
 
