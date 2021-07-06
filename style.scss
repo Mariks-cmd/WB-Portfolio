@@ -377,8 +377,12 @@
           padding: 10px 20px;
           box-shadow: 0 2px 10px;
 
-          h4, a, p {
+          span, h4, pre {
             color: #111;
+          }
+
+          span {
+            float: right;
           }
 
           h4 {
@@ -386,16 +390,8 @@
             font-weight: 600;
           }
 
-          a {
-            margin: 10px 0;
+          pre {
             font-size: 1rem;
-            text-decoration: none;
-            display: inline-block;
-          }
-
-          p {
-            font-size: 1rem;
-
           }
         }
       }

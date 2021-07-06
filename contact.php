@@ -38,9 +38,9 @@
                 </form>
                 <div class="prev-comments">
                     <div class="single-item">
+                        <span class="time"><?=date('d.m.Y. H:i'); ?></span>
                         <h4>Maris Ginters</h4>
-                        <a href="mailto:ginters.maris@inbox.lv">ginters.maris@inbox.lv</a>
-                        <p>If necessary you can contact me by email also</p>
+                        <pre>If necessary you can contact me by email also</pre>
                     </div>
                 </div>
             </div>
