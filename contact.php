@@ -38,6 +38,20 @@ if (isset($_POST['submit'])) {
         <nav>
             <div class="nav-menu">
                 <h1>Portfolio</h1>
+                <a class="toggle-menu" href="#" onclick="document.querySelector('.nav-menu').classList.toggle('visible-navmenu')">
+                    <svg
+                        width="18"
+                        height="12"
+                        viewBox="0 0 18 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z"
+                        fill="#606060"
+                        />
+                    </svg>
+                </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -49,6 +63,9 @@ if (isset($_POST['submit'])) {
         </nav>
 
         <div id="comments">
+            <div class="com-header">
+                <h1>Contact Me</h1>
+            </div>
             <div class="wrapper">
                 <form action="" method="POST" class="form">
                     <div class="input-form">
@@ -77,7 +94,7 @@ if (isset($_POST['submit'])) {
                         <?php $d = new DateTime($row['time']); ?>
                         <span class="time"><?=$d->format('d.m.Y. H:i'); ?></span>
                         <h4><?php echo $row['name']; ?></h4>
-                        <pre><?php echo $row['message']; ?></pre>
+                        <p><?php echo $row['message']; ?></p>
                     </div>
                     <?php
 
