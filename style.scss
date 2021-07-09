@@ -25,10 +25,11 @@
     box-shadow: 2px 2px 10px;
     padding: 0px 5%;
     position: fixed;
-    // left: 0;
-    // top: 0;
+    left: 0;
+    top: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 1;
 
     .toggle-menu {
       display: none;
@@ -473,7 +474,7 @@
       justify-content: center;
       align-items: center;
 
-      .about-container, .home-container {
+      .about-container, .home-container, .img-container {
         width: 90%;
         // display: flex;
         // align-items: center;
