@@ -352,15 +352,15 @@
       background: #fff;
       box-shadow: 2px 2px 10px;
 
-      form {
+      .form {
         // margin-bottom: 200px;
 
-        .input-form, .input-form textarea {
+        .input-form {
           width: 100%;
           height: 50px;
           margin-bottom: 50px;
           // display: block;
-  
+
           label {
             font-weight: 600;
             margin-bottom: 5px;
@@ -412,14 +412,15 @@
 
       .prev-comments {
 
-        .single-item {
+        .comment-item {
+          width: 100%;
+          min-height: 40px;
           text-align: left;
           padding: 10px 20px;
           box-shadow: 0 2px 10px;
           margin-bottom: 20px;
-          box-sizing: border-box;
           border-radius: 10px;
-          display: block;
+          box-sizing: border-box;
 
           span, h4, pre {
             color: #111;
@@ -434,8 +435,10 @@
             font-weight: 600;
           }
 
-          p {
+          pre {
             font-size: 1rem;
+            word-break: break-word;
+            white-space: pre-wrap;
           }
         }
       }

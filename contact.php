@@ -90,11 +90,11 @@ if (isset($_POST['submit'])) {
                         while ($row = mysqli_fetch_assoc($result)) {
 
                     ?>
-                    <div class="single-item">
+                    <div class="comment-item">
                         <?php $d = new DateTime($row['time']); ?>
                         <span class="time"><?=$d->format('d.m.Y. H:i'); ?></span>
                         <h4><?php echo $row['name']; ?></h4>
-                        <p><?php echo $row['message']; ?></p>
+                        <pre><?php echo $row['message']; ?></pre>
                     </div>
                     <?php
 
